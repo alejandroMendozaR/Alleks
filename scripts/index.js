@@ -12,6 +12,17 @@ const draws = [
         ]
     },
 ]
+const recomes = [
+    {
+        name: "",
+        description: "",
+        link: ""
+    }
+]
+
+
+
+
 
 localStorage.setItem("draws", JSON.stringify(draws));
 
@@ -47,8 +58,21 @@ function paintDraws (){
 }
 
 function openImg(index){
-    
+
+}
+
+function paintRecomes(){
+    let container = document.getElementById("recomes");
+    recomes.forEach(recom => {
+        let element = document.createElement("li");
+        let image = document.createElement("img");
+        let name = document.createElement("h3");
+        let link = document.createElement("a");
+
+        
+    });
 }
 
 
 window.addEventListener("load", paintDraws());
+window.addEventListener("load", paintRecomes());

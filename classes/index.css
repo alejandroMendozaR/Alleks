@@ -219,11 +219,19 @@ footer {
     width: 100%;
     padding: 20px 0px;
 }
-.linea {
-    
+footer>div {
     display: flex;
-    justify-content: space-around;
     align-items: start;
+    justify-content: space-around;
+
+}
+.linea2 { 
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.linea2 i {
+    margin-right: 8px;
 }
 footer ul {
     margin: 0%;
