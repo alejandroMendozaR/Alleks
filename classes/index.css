@@ -1,50 +1,79 @@
 :root {
     --yellow: #EABB55;
     --orange: #CB6E4F;
+    --black: #14120e;
 }
 
 *{
     font-family: 'Amaranth', sans-serif;
     font-family: 'Permanent Marker', cursive;
     font-family: 'Varela Round', sans-serif;
+    
+    color: #fff;
 }
 body {
     margin: 0%;
+    background-color: var(--black);
 }
 h1 {
-    font-size: 25px;
+    font-size: 50px;
 }
 h3 {
     margin: 5px;
 }
 
 #banner {
+    position: relative;
+    top: 10vh;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
+    overflow: hidden;
+}
+#banner * {
+    color: #000;
+}
+.bgBanner {
+    z-index: -1;
+    position: absolute;
+    min-width: 100vw;
+    right: 0%;
+    top: 0px;
+}
+.pfp {
+    box-shadow: 0px 0px 15px var(--orange);
+    height: 80%;
+    border-radius: 50%;
+    margin: 0px 30px;
+}
+#banner h1 {
+    font-size: 50px;
 }
 
 #navbar {
     width: 100%;
-    height: auto;
+    height: 10vh;
     display: flex;
     position: fixed;
     justify-content: space-between;
     box-sizing: border-box;
+    background-color: #EABB55;
 }
 
 #navbar ul {
     width: 100%;
     display: flex;
-    align-items: end;
+    align-items: center;
     list-style: none;
     justify-content: end;
 }
 
 #navbar ul li {
-    min-width: 15%;
-    max-width: 35%;
+    min-width: 5%;
+    max-width: 20%;
+    margin: 0px 25px;
     text-align: center;
     color: #fff;
 }
@@ -70,13 +99,13 @@ h3 {
 #navbar a:hover,
 #homebtn:hover {
     transform: scale(110%);
-    border-bottom: #fff solid 4px;
+    border-bottom: #fff solid 3px;
     color: #fff;
     transition: 0.3s;
 }
 
 .main {
-    margin: 10px 70px;
+    margin: 50px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +151,7 @@ h3 {
         transition: 0.3s;
     }
     .draw button {
-        background-color: #fff;
+        background: none;
         border-radius: 20px;
         border: none;
         height: 100%;
@@ -181,6 +210,7 @@ h3 {
     }
 
 footer {
+    background-color: var(--yellow);
     width: 100%;
     display: flex;
     justify-content: center;
