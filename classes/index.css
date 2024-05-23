@@ -17,23 +17,28 @@ body {
 }
 h1 {
     font-size: 50px;
+    text-align: center;
 }
 h3 {
     margin: 5px;
+    text-align: center;
 }
 
 #banner {
     position: relative;
     top: 10vh;
-    box-sizing: border-box;
+    box-sizing: content-box;
     display: flex;
     align-items: center;
     width: 100%;
     height: 65vh;
     overflow: hidden;
+    border-bottom: solid 10px var(--yellow);
+    box-shadow: 0px 0px 100px var(--yellow);
 }
 #banner * {
     color: #000;
+
 }
 .bgBanner {
     z-index: -1;
@@ -43,7 +48,7 @@ h3 {
     top: 0px;
 }
 .pfp {
-    box-shadow: 0px 0px 15px var(--orange);
+    box-shadow: 0px 0px 30px var(--orange);
     height: 80%;
     border-radius: 50%;
     margin: 0px 30px;
@@ -60,6 +65,7 @@ h3 {
     justify-content: space-between;
     box-sizing: border-box;
     background-color: #EABB55;
+    z-index: 10;
 }
 
 #navbar ul {
@@ -105,7 +111,7 @@ h3 {
 }
 
 .main {
-    margin: 50px 70px;
+    margin: 85px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +148,7 @@ h3 {
         justify-content: space-between;
     }
     .draw {
-        height: 60vh;
+        height: 70vh;
         list-style: none;
         border-radius: 20px;
         display: flex;
@@ -159,7 +165,8 @@ h3 {
 
     }
     .draw img {
-        height: 48vh;
+        border-radius: 10px;
+        height: 55vh;
     }
     .draw p {
         margin: 2px;
@@ -167,7 +174,6 @@ h3 {
     }
     .draw:hover{
         filter: brightness(50%);
-        color: blue;
         transition: 0.3s;
     }
 
@@ -190,7 +196,7 @@ h3 {
     }
     .recom {
         position: relative;
-        width: 25vw;
+        width: 18vw;
         margin: 20px;
         display: flex;
         flex-direction: column;
@@ -205,22 +211,35 @@ h3 {
         margin: 5px;
     }
     .recom a {
-        text-decoration: underline solid #000;
-        color: #000;
+        text-decoration: underline solid #fff;
     }
 
 footer {
     background-color: var(--yellow);
     width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+footer ul {
+    margin: 0%;
+    padding: 0%;
+}
+footer ul li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+footer ul li i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+footer ul li a {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer ul li {
-    list-style: none;
-}
-footer ul li a {
-    color: #000;
-    text-decoration: none;
 }
