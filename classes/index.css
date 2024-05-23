@@ -218,6 +218,9 @@ footer {
     background-color: var(--yellow);
     width: 100%;
     padding: 20px 0px;
+}
+.linea {
+    
     display: flex;
     justify-content: space-around;
     align-items: start;
