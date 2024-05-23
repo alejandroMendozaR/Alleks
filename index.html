@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alleks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./classes/index.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
+        <a id="homebtn" href="#banner">
+            Alleks
+        </a>
         <ul>
-            <li>
-                <a href="#banner">
-                    Alleks
-                </a>
-            </li>
             <li>
                 <a href="#whoami">
                     Who am I?
@@ -29,9 +32,6 @@
                 </a>
             </li>
             <li>
-
-            </li>
-            <li>
                 <a href="">Log In</a>
             </li>
         </ul>
@@ -40,7 +40,7 @@
         <img src="" alt="">
         <h1 class="name"></h1>
     </header>
-    <div class="main">
+    <section class="main">
         <section id="whoami" class="whoami">
             <h1>Who am I?</h1>
             <p>
@@ -50,36 +50,71 @@
             </p>
         </section>
         <section id="draws" class="draws">
-
+            <h1>My draws</h1>
+            <ul id="obras">
+                <!-- Las obras se pintan dinamicamente -->
+                <li class="draw">
+                    <button id="0">
+                        <img src="./src/img/prueba.jpeg" alt="">
+                        <h3>Name</h3>
+                        <p>Little text</p>
+                    </button>
+                </li>
+                
+            </ul>
         </section>
         <section id="recommendations" class="recommendations">
             <h1>Recommendations</h1>
-            <ul>
+            <ul id="recomes">
                 <li class="recom">
-                    <img src="" alt="">
-                    <h3></h3>
-                    <a href="">See more</a>
-                </li>
-                <li class="recom">
-                    <img src="" alt="">
-                    <h3></h3>
-                    <a href="">See more</a>
-                </li>
-                <li class="recom">
-                    <img src="" alt="">
-                    <h3></h3>
-                    <a href="">See more</a>
+                    <img src="./src/img/prueba.jpeg" alt="">
+                    <h3>userName</h3>
+                    <p>Little description</p>
+                    <a href="">Visit</a>
                 </li>
             </ul>
         </section>
-    </div>
+    </section>
     <footer id="contact">
-        <div>
-            
-        </div>
-        <div>
-            
-        </div>
+        <ul>
+            <li>
+                <a href="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>
