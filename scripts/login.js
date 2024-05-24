@@ -32,6 +32,11 @@ function login() {
 
 }
 
+let btnBack = document.getElementById("btnBack");
+btnBack.addEventListener("click", () => {
+    window.history.back();
+});
+
 window.addEventListener('load', () => {
     if(bandera){
         window.history.back();  

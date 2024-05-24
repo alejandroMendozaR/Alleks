@@ -2,42 +2,173 @@ let draws = JSON.parse(localStorage.getItem("draws"));
 if(!draws){
     let draws = [
         {
-            name: "Me",
-            nameImg: "PFP.png",
-            description: "My profile picture",
-            likes: 5,
+            name: "Warmth",
+            nameImg: "warmth.png",
+            description: "A draw with warm colors",
+            likes: 10,
             comments: [
                 {
-                    photo: "",
-                    nick: "",
-                    comment: ""
+                    photo: "default.jpg",
+                    nick: "Artu_ls",
+                    comment: "Great draw, I like colors :D"
                 }
             ]
         },
         {
-            name: "Me",
-            nameImg: "PFP.png",
-            description: "My profile picture",
-            likes: "5",
+            name: "Gymbro",
+            nameImg: "gymbro.png",
+            description: "A practice of anatomy",
+            likes: 8,
             comments: [
                 {
-                    photo: "",
-                    nick: "",
-                    comment: ""
+                    photo: "default.jpg",
+                    nick: "Andrew52",
+                    comment: "Cool"
+                },
+                {
+                    photo: "default.jpg",
+                    nick: "galletitas_con_lesheUwU",
+                    comment: "I like it -.-"
+                }
+            ]
+        },
+        {
+            name: "Tacosaurio",
+            nameImg: "tacosaur.png",
+            description: "tacosaurio RAWWWWWWWWWWWWWWWR",
+            likes: 8,
+            comments: [
+                {
+                    photo: "default.jpg",
+                    nick: "Artu_ls",
+                    comment: "rawwwwwr"
+                },
+                {
+                    photo: "default.jpg",
+                    nick: "im_susy68",
+                    comment: "Great idea -.-"
+                },
+                {
+                    photo: "default.jpg",
+                    nick: "racer",
+                    comment: "..."
+                },
+                {
+                    photo: "default.jpg",
+                    nick: "katyrssss",
+                    comment: "idk what I can type"
+                }
+            ]
+        },
+        {
+            name: "Balance",
+            nameImg: "balance.png",
+            description: "Balance in nature",
+            likes: 8,
+            comments: [
+                {
+                    photo: "default.jpg",
+                    nick: "starsky",
+                    comment: "I really love it"
+                }
+            ]
+        },
+        {
+            name: "Sendier",
+            nameImg: "sendier.png",
+            description: "Pokemon crreated by my mind",
+            likes: 8,
+            comments: [
+                {
+                    photo: "default.jpg",
+                    nick: "pokelover",
+                    comment: "Remember to dragonite"
+                }
+            ]
+        },
+        {
+            name: "Calaverita",
+            nameImg: "diadeMuertos.png",
+            description: "I did it for school",
+            likes: 8,
+            comments: [
+                {
+                    photo: "default.jpg",
+                    nick: "troll99",
+                    comment: "._."
+                },
+                {
+                    photo: "default.jpg",
+                    nick: "troll99",
+                    comment: "._."
+                }
+            ]
+        },
+        {
+            name: "Subway Surfers",
+            nameImg: "subwaySurfers.png",
+            description: "A fanart, just that",
+            likes: 8,
+            comments: [
+                {
+                    photo: "default.jpg",
+                    nick: "taily_12",
+                    comment: "Ily"
+                },
+                {
+                    photo: "default.jpg",
+                    nick: "kvsss_shop",
+                    comment: "oh well..."
+                }
+            ]
+        },
+        {
+            name: "Introspection",
+            nameImg: "introspection.png",
+            description: "Into something unknown",
+            likes: 8,
+            comments: [
+                {
+                    photo: "default.jpg",
+                    nick: "julesss",
+                    comment: "Interesting"
+                },
+                {
+                    photo: "default.jpg",
+                    nick: "lift_ppp",
+                    comment: "Coool..."
                 }
             ]
         }
     ]
-    localStorage.setItem("draws", JSON.stringify(draws));
 }
+localStorage.setItem("draws", JSON.stringify(draws));
 
 
 const recomes = [
     {
-        name: "Me",
-        nameImg: "PFP.png",
-        description: "ps yo ",
-        link: "https://www.instagram.com/alleks_drw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        name: "Sahlarei",
+        nameImg: "sahlarei.jpg",
+        description: "Digital artist / Semirrealism",
+        link: "https://www.instagram.com/sahlarei?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        name: "Mauro Delacroix",
+        nameImg: "mauro.jpg",
+        description: "Digital artist / Mangaka",
+        link: "https://www.instagram.com/mauro_delacroix?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        name: "Alejandra PLS",
+        nameImg: "ale_pls.jpg",
+        description: "Digital artist / Own style",
+        link: "https://www.instagram.com/alejandra_pls?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        name: "Thunder Starxx",
+        nameImg: "thunderStarx.png",
+        description: "Digital artist / Cartoon",
+        link: "https://www.instagram.com/thunder_starx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
     }
 ]
 let listaUsuarios=JSON.parse(localStorage.getItem("lista"));
@@ -104,7 +235,7 @@ function paintRecomes(){
 
         element.classList.add("recom");
 
-        image.src = `././src/draws/${recom.nameImg}`;
+        image.src = `././src/artists/${recom.nameImg}`;
         image.alt = recom.name;
 
         name.textContent = recom.name;

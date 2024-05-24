@@ -41,3 +41,8 @@ function register() {
         alert('Por favor, complete todos los campos y asegurese de que las contrasesñas coincidan');
     }
 }
+
+let btnBack = document.getElementById("btnBack");
+btnBack.addEventListener("click", () => {
+    window.history.back();
+});

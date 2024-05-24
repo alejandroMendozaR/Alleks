@@ -182,4 +182,11 @@ function submitComment() {
     paintComments();
 }
 
+
+let btnBack = document.getElementById("btnBack");
+btnBack.addEventListener("click", () => {
+    window.history.back();
+});
+
+
 window.addEventListener("load", paintDraw);
