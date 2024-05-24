@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amaranth&family=Permanent+Marker&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f6d9fecf2a.js" crossorigin="anonymous"></script><!-- iconos -->
+    <link rel="stylesheet" href="./classes/login.css">
+</head>
+
+<body>
+    <button id="btnBack">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+    <header id="banner">
+        <img class="bgBanner" src="./src/draws/Banner.png" alt="">
+    </header>
+
+    <section class="form__login">
+        <h2 class="form__text">
+            ¡BIENVENIDO! <br>Ingresa tu email para iniciar sesión o crea una nueva cuenta
+        </h2>
+        <form class="form__inputs" action="">
+            <input id="REmail" class="form__item item--input" type="email" placeholder="@email.com">
+            <input id="Rpass" class="form__item item--input" type="password" placeholder="Password">
+            <button type="button" class="form__item item--button" id="login" >Iniciar sesión</button>
+        </form>
+        <p class="form__text text--register">¿Todavía no tienes una cuenta? <a href="./signup.html">Sign up</a></p>
+    </section>
+
+
+
+    <script src="./scripts/login.js"></script>
+
+</body>
+
+</html>

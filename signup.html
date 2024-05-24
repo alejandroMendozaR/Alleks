@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f6d9fecf2a.js" crossorigin="anonymous"></script><!-- iconos -->
+    <link rel="stylesheet" href="./classes/signup.css">
+</head>
+<body>
+    
+    <button id="btnBack">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+    <header id="banner">
+        <img class="bgBanner" src="./src/draws/Banner.png" alt="">
+    </header>
+
+
+    <section class="form-register">
+        <h2 class="form__text">Formulario Registro</h2>
+        <input class="input__item" type="text" id="user" placeholder="Nombre de usuario">
+        <input class="input__item" type="email" id="correo" placeholder="Ingrese su correo">
+        <input class="input__item" type="password" id="password" placeholder="Ingrese su contraseña">
+        <input class="input__item" type="password" id="confPass" placeholder="Confirme su contraseña">
+        <button class="input__item item--button" id="register" onclick="register()">Registrar</button>
+        <p class="form__text text--register"><a href="login.html">Ya tengo Cuenta</a></p>  
+    </section>
+
+
+    <script src="./scripts/register.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alleks</title>
+    <link rel="icon" href="./src/imag.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f6d9fecf2a.js" crossorigin="anonymous"></script><!-- iconos -->
+
+    <link rel="stylesheet" href="./classes/draw.css">
+</head>
+<body>
+    
+    <button id="btnBack">
+        <i class="fa-solid fa-arrow-left">i</i>
+    </button>
+    <section class="main">
+        <section id="left">
+            <h1 id="name">NAME</h1>
+            <img id="draw" src="./src/draws/prueba.jpeg" alt="">
+            <div>
+                <button id="likeBtn" onclick="like()">
+                    <i id="iconLike" class="fa-regular fa-comment"></i>
+                    <p id="numLikes"></p>
+                </button>
+                <button id onclick="comment()">
+                    <i id="iconCom" class="fa-regular fa-heart"></i>
+                    <p id="numComs"></p>
+                </button>
+            </div>
+        </section>
+        <section id="comments">
+            <h1>Comments</h1>
+            <br>
+            <ul id="commentContainer">
+                <li id="comment" class="comment">
+                   <img src="./src/draws/PFP.png" alt="">
+                   <div>
+                        <h3>User name</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid consequuntur voluptatum molestiae officia exercitationem delectus repellendus! Voluptas beatae, blanditiis numquam eos quos earum vero accusantium, ipsam aperiam odit natus?
+                        </p>
+                   </div> 
+                </li>
+            </ul>
+        </section>
+    </section>
+    <footer id="contact">
+        <div class="linea">
+            <ul>
+                <li>
+                    <h3>Found me on</h3>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/alleks_drw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Inspirations</h3>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i><p>Sahlarei</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i><p>Mauro Delacroix</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i><p>Thunder starx</p>
+    
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./scripts/draw.js"></script>
+</body>
+</html>

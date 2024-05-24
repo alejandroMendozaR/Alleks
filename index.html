@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/imag.svg">
+    
     <title>Alleks</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/f6d9fecf2a.js" crossorigin="anonymous"></script><!-- iconos -->
 
     <link rel="stylesheet" href="./classes/index.css">
 </head>
 <body>
-    <nav id="navbar">
+    <nav class="navbar" id="navbar">
         <a id="homebtn" href="#banner">
             Alleks
         </a>
@@ -33,15 +36,15 @@
                     Recommendations
                 </a>
             </li>
-            <li>
-                <a href="">Log In</a>
+            <li id="loginBtn" class="loginBtn">
+                <a href="./login.html">Log In</a>
             </li>
         </ul>
     </nav>
     <header id="banner">
-        <img class="bgBanner" src="./src/img/Banner.png" alt="">
+        <img class="bgBanner" src="./src/draws/Banner.png" alt="">
         
-        <img class="pfp" src="./src/img/PFP.png" alt="">
+        <img class="pfp" src="./src/draws/PFP.png" alt="">
         <h1 class="name">ALLEKS</h1>
     </header>
     <section class="main">
@@ -59,7 +62,7 @@
                 <!-- Las obras se pintan dinamicamente -->
                 <li class="draw">
                     <button id="0">
-                        <img src="./src/img/prueba.jpeg" alt="">
+                        <img src="./src/draws/prueba.jpeg" alt="">
                         <h3>Name</h3>
                         <p>Little text</p>
                     </button>
@@ -69,9 +72,13 @@
         </section>
         <section id="recommendations" class="recommendations">
             <h1>Recommendations</h1>
+            <p>
+                These are my favorite digital artists right now, I think you like them
+            </p>
+            <br>
             <ul id="recomes">
                 <li class="recom">
-                    <img src="./src/img/prueba.jpeg" alt="">
+                    <img src="./src/draws/prueba.jpeg" alt="">
                     <h3>userName</h3>
                     <p>Little description</p>
                     <a href="">Visit</a>
@@ -133,6 +140,9 @@
         </div>
     </footer>
 
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/scrolles.js
+    "></script>
 </body>
 </html>
