@@ -176,7 +176,7 @@ footer ul li a p{
 #btnBack i {
     text-align: center;
     font-size: 20px;
-    color: var(--yellow);
+    color: var(--black);
 }
 #btnBack:hover {
     position: fixed;

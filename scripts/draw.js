@@ -27,6 +27,7 @@ function paintDraw (){
 }
 
 function paintComments ( ){
+    let containerSupreme = document.getElementById("comments");
     let commentContainer = document.getElementById("commentContainer");
     if(commentContainer){
         commentContainer.parentNode.removeChild(commentContainer);
@@ -43,7 +44,7 @@ function paintComments ( ){
     
             comment.classList.add("comment");
     
-            pfp.src = com.photo;
+            pfp.src = `././src/draws/${com.photo}`;
             pfp.alt = com.nick;
     
             username.textContent = com.nick;
@@ -57,6 +58,9 @@ function paintComments ( ){
             comment.appendChild(contText);
     
             newCont.appendChild(comment);
+
+            containerSupreme.appendChild(newCont);
+            console.log("agregue");
         });
     }else {
         let commentContainer = document.createElement("ul");
@@ -85,6 +89,8 @@ function paintComments ( ){
             comment.appendChild(contText);
     
             commentContainer.appendChild(comment);
+            containerSupreme.appendChild(newCont);
+            console.log("agregue");
         });
     }
 }
@@ -156,19 +162,23 @@ function submitComment() {
     let indexUser = localStorage.getItem("indexUser");
     let comentario = document.getElementById("commentText").value;
     let nickname = listaUsuarios[indexUser];
-
+   
     let newComment = {
-        photo: "default.png",
+        photo: "default.jpg",
         nick: nickname,
         comment: comentario
     }
+    console.log(newComment)
 
     drawSelected.comments.push(newComment);
+    console.log(drawSelected.comments);
     localStorage.setItem("draws", JSON.stringify(draws));
-    let cont = document.getElementById(formComment);    
+    let cont = document.getElementById(formComment);   
+
     if(cont){
         cont.remove();
     }
+
     paintComments();
 }
 
